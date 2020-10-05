@@ -1,3 +1,39 @@
 body {
-    background-color: red;
+    background-color: green;
+}
+.card {
+display: inline-block;
+width: 300px;
+height: 450px;
+background-color: white;
+position: relative;
+border: 1px solid black;
+text-align: center;
+line-height: 125px;
+border-radius: 5px;
+
+}
+.card:after {
+font-size: 70%;
+font-weight: bold;
+}
+.spades::before,
+.spades::after {
+content: "\2660";
+color: black;
+}
+.heart::before,
+.heart::after {
+content: "\2665";
+color: red;
+}
+.black_diamond::before,
+.black_diamond::after {
+content: "\2666";
+color: black;
+}
+.black_club::before,
+.black_club::after {
+content: "\2663";
+color: black;
 }
