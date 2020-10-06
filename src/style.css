@@ -2,17 +2,26 @@ body {
     background-color: green;
 }
 .card {
+position: relative;
 display: inline-block;
 width: 300px;
 height: 450px;
 background-color: white;
-position: relative;
 border: 1px solid black;
 text-align: center;
-line-height: 125px;
 border-radius: 5px;
+box-shadow: .2em .2em .5em #333;
+font-size: 25px;
+
 
 }
+
+
+.number{
+    position: absolute;
+    
+}
+
 .card:after {
 font-size: 70%;
 font-weight: bold;
