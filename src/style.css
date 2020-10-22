@@ -1,43 +1,64 @@
 body {
     background-color: green;
+    box-sizing: border-box;
 }
 .card {
     position: relative;
-    display: flex;
-    margin: 0px auto;
-    width: 300px;
-    height: 450px;
-    background-color: white;
-    border: 1px solid black;
     text-align: center;
-    vertical-align: middle;
+    background: white;
+    margin: 0 auto;
+    width: 300px;
+    height: 350px;
+    padding: 40px;
+    padding-top: 150px;
+    padding-bottom: 0px;
+    border: 1px solid black;
     border-radius: 5px;
     box-shadow: .2em .2em .5em #333;
-    font-size: 25px;
+    font-size: 80px;
+    vertical-align: middle;
+
+    /*position: relative;
+    display: flex;*/
+   
 }
-h1{
-    position:absolute;
+/*.numero::before{
+    padding-top: 150px;
     font-size: 80px;
     top: 50%;
     left: 50%;
-    height: 30%;
+    height: 50%;
     width: 50%;
     margin: -15% 0 0 -25%;
+    color:red;
+   
 }
+.numero::after{
+    padding-top: 150px;
+    font-size: 80px;
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    width: 50%;
+    margin: -15% 0 0 -25%;
+    color:red;
+   
+}*/
 .spades::before {
     position: absolute;
     content: "\2660";
     color: black;
     left: 10px;
+    font-size:60px;
 }
 .spades::after {
     position:absolute;
     content: "\2660";
     color: black;
-    left: 10px;
+    right: 10px;
     font-size:60px;
 }
-.heart::before {
+.hearts::before {
     position: absolute;
     content: "\2665";
     color: red;
@@ -45,7 +66,7 @@ h1{
     left: 10px;
     font-size:60px;
 }
-.heart::after {
+.hearts::after {
     position: absolute;
     content: "\2665";
     color: red;
