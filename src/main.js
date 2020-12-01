@@ -18,7 +18,7 @@ require('./style.css')
 
 
 
-    onclick=function () {
+    window.onload=function () {
     document.querySelector(".card").classList.add(randomPalo());
     document.querySelector(".card").innerHTML=(randomNumber());
     
